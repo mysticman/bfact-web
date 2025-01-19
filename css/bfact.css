@@ -1,0 +1,546 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/***************************************/
+/*Sticky footer*/
+html > body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.site-content {
+  margin-top: 67px;
+  flex: 1; }
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #353e4f; }
+
+p {
+  margin: 0 0 10px 0;
+  line-height: 1.65em; }
+
+b {
+  font-weight: bold; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+  a:hover, a:focus {
+    text-decoration: none;
+    outline: none; }
+
+.brand-color {
+  color: #28b8c0; }
+
+.btn {
+  background-color: #28b8c0;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 48px;
+  border-radius: 20px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  border-radius: 30px;
+  border: 0;
+  transition: .3s all ease; }
+  .btn:hover {
+    color: #fff;
+    background-color: #202734;
+    border-color: #202734; }
+
+.section-title-container {
+  text-align: center;
+  margin: 40px 0; }
+  .section-title-container .section-title {
+    font-size: 60px;
+    margin-bottom: 20px; }
+  .section-title-container .sub-title {
+    font-size: 30px; }
+
+h1,
+h2,
+h3 {
+  line-height: 1.2em; }
+
+/*  ***********************************/
+.site-header {
+  min-height: 700px;
+  background-position: center center;
+  background-size: cover; }
+  .site-header .main-nav {
+    margin: 20px 0; }
+    .site-header .main-nav .navbar-header .navbar-brand {
+      margin: 0 0 0 20px;
+      padding: 0;
+      height: auto; }
+    .site-header .main-nav .navbar-nav li a {
+      padding: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      transition: .3s all ease; }
+    .site-header .main-nav .navbar-nav li:hover a {
+      background-color: transparent;
+      color: #28b8c0; }
+  .site-header .header-content {
+    text-align: center;
+    color: #fff; }
+    .site-header .header-content h1 {
+      font-size: 80px;
+      margin: 40px 0; }
+    .site-header .header-content h2 {
+      margin: 40px 0 0 0;
+      font-size: 30px; }
+    .site-header .header-content h3 {
+      font-weight: 300;
+      font-size: 20px; }
+    .site-header .header-content a {
+      margin-top: 50px; }
+
+.service-item {
+  display: flex;
+  margin: 30px 0; }
+  .service-item .service-image {
+    color: #28b8c0;
+    font-size: 45px;
+    margin-right: 50px; }
+  .service-item .service-content h3 {
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .service-item .service-content p {
+    font-weight: 300; }
+  .service-item.item-left {
+    margin-right: 20%; }
+  .service-item.item-right {
+    margin-left: 20%; }
+
+.offer-content {
+  background-position: center center;
+  background-size: cover; }
+  .offer-content .offer-container {
+    min-height: 500px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .offer-content .offer-container h1 {
+      font-size: 60px;
+      margin: 20px 0 40px 0; }
+    .offer-content .offer-container h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #28b8c0; }
+
+.about-content {
+  background-position: center center;
+  background-size: cover; }
+  .about-content .offer-container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .about-content .offer-container h1 {
+      font-size: 50px;
+      margin-bottom: 20px; }
+    .about-content .offer-container p {
+      font-size: 18px; }
+
+.knowledge-content {
+  color: #fff;
+  min-height: 500px; }
+  .knowledge-content .graph-item {
+    margin: 40px auto;
+    width: 150px;
+    position: relative;
+    text-align: center; }
+    .knowledge-content .graph-item .chart-data {
+      position: absolute;
+      width: 150px;
+      font-size: 36px;
+      text-align: center;
+      top: 57px; }
+    .knowledge-content .graph-item .chart-title {
+      margin-top: 20px; }
+
+.references-content {
+  margin-bottom: 40px; }
+
+.project-item {
+  position: relative;
+  margin: 20px 0;
+  text-align: center; }
+  .project-item img {
+    display: inline-block; }
+
+.site-footer {
+  background-color: #202734;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center; }
+  .site-footer .footer-logo {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px; }
+    .site-footer .footer-logo b {
+      color: #28b8c0; }
+  .site-footer h1 {
+    font-size: 26px; }
+  .site-footer h2 a {
+    color: #28b8c0;
+    font-size: 16px;
+    transition: .5s all ease; }
+    .site-footer h2 a:hover {
+      color: #fff; }
+  .site-footer h3 {
+    margin-top: 10px;
+    font-size: 16px; }
+
+.social-list {
+  margin: 20px 0; }
+  .social-list li a {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #28b8c0;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    transition: .5s all ease; }
+    .social-list li a:hover {
+      color: #202734;
+      background-color: #fff; }
+
+/*-----------  Media Queries ------------*/
+.res-test {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 500;
+  z-index: 99999;
+  opacity: 0.8; }
+
+.high-pixel-density {
+  display: none;
+  font-weight: bold;
+  margin-left: 20px;
+  position: relative; }
+  .high-pixel-density:before {
+    content: "-";
+    position: absolute;
+    left: -10px; }
+
+/* From XS Devices */
+@media (min-width: 440px) {
+  .res-xs {
+    display: block;
+    background-color: red; }
+  .res-sm,
+  .res-md,
+  .res-lg {
+    display: none; }
+  .navbar-toggle {
+    background-color: #28b8c0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 7px;
+    transition: .3s all ease; }
+    .navbar-toggle .icon-bar {
+      background-color: #fff;
+      margin: 0 auto; }
+    .navbar-toggle:hover {
+      background-color: #202734; }
+  .site-header {
+    min-height: 560px;
+    padding-bottom: 40px; }
+    .site-header .header-content h1 {
+      font-size: 40px; }
+    .site-header .header-content h2 {
+      font-size: 26px;
+      line-height: 1.2em; }
+    .site-header .header-content h3 {
+      line-height: 1.2em; }
+  .service-item {
+    display: block;
+    margin: 30px 0;
+    text-align: center; }
+    .service-item .service-image {
+      color: #28b8c0;
+      font-size: 45px;
+      margin-right: 0; }
+    .service-item .service-content {
+      margin: 20px 0 0 0; }
+      .service-item .service-content h3 {
+        font-size: 26px;
+        margin-bottom: 15px; }
+    .service-item.item-left {
+      margin-right: 0; }
+    .service-item.item-right {
+      margin-left: 0; }
+  .project-item:hover .hover-content h3 {
+    font-size: 18px; }
+  .content-section.knowledge-content {
+    background-color: #28b8c0;
+    background-image: none; }
+  .section-title-container h1.section-title {
+    font-size: 36px; }
+  .section-title-container h2.sub-title {
+    line-height: 1.2em;
+    font-size: 20px; }
+  .offer-content .offer-container h1 {
+    font-size: 36px; }
+  .offer-content .offer-container h2 {
+    line-height: 1.2em;
+    font-size: 20px; }
+  .about-content {
+    background-image: none; }
+    .about-content .offer-container h1 {
+      font-size: 36px; }
+    .about-content .offer-container p {
+      font-size: 18px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .res-sm {
+    display: block;
+    background-color: dodgerblue; }
+  .res-xs,
+  .res-md,
+  .res-lg {
+    display: none; }
+  .container .navbar-nav.navbar-right li {
+    display: inline-block; }
+    .container .navbar-nav.navbar-right li a {
+      padding: 18px 10px; }
+  .service-item {
+    display: block;
+    margin: 30px 0;
+    text-align: center; }
+    .service-item .service-image {
+      color: #28b8c0;
+      font-size: 45px;
+      margin-right: 0; }
+    .service-item .service-content {
+      margin: 20px 0 0 0; }
+      .service-item .service-content h3 {
+        font-size: 26px;
+        margin-bottom: 15px; }
+    .service-item.item-left {
+      margin-right: 0; }
+    .service-item.item-right {
+      margin-left: 0; }
+  .offer-content h2 {
+    margin: 30px 0 10px 0; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .res-md {
+    display: block;
+    background-color: forestgreen; }
+  .res-xs,
+  .res-sm,
+  .res-lg {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .res-lg {
+    display: block;
+    background-color: darkorange; }
+  .res-xs,
+  .res-sm,
+  .res-md {
+    display: none; } }
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .res-xs {
+    display: block;
+    background-color: teal; }
+  .xs-hpd {
+    display: inline; }
+  .res-sm, .res-md, .res-lg {
+    display: none; }
+  .container > .navbar-header .navbar-brand {
+    float: left;
+    display: inline-block;
+    margin-left: 44px; }
+  .container .navbar-nav {
+    margin: 0; }
+    .container .navbar-nav li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .navbar-fixed-top .navbar-collapse {
+    max-height: initial; }
+  .navbar-toggle {
+    background-color: #28b8c0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 7px;
+    transition: .3s all ease; }
+    .navbar-toggle .icon-bar {
+      background-color: #fff;
+      margin: 0 auto; }
+    .navbar-toggle:hover {
+      background-color: #202734; }
+  .site-header {
+    min-height: 560px;
+    padding-bottom: 40px; }
+    .site-header .header-content h1 {
+      font-size: 30px; }
+    .site-header .header-content h2 {
+      font-size: 20px;
+      line-height: 1.4em; }
+    .site-header .header-content h3 {
+      line-height: 1.4em; }
+  .service-item {
+    display: block;
+    margin: 30px 0;
+    text-align: center; }
+    .service-item .service-image {
+      color: #28b8c0;
+      font-size: 45px;
+      margin-right: 0; }
+    .service-item .service-content {
+      margin: 20px 0 0 0; }
+      .service-item .service-content h3 {
+        font-size: 26px;
+        margin-bottom: 15px; }
+    .service-item.item-left {
+      margin-right: 0; }
+    .service-item.item-right {
+      margin-left: 0; }
+  .project-item:hover .hover-content h3 {
+    font-size: 18px; }
+  .content-section.knowledge-content {
+    background-color: #1f9096; }
+  .section-title-container h1.section-title {
+    font-size: 36px; }
+  .section-title-container h2.sub-title {
+    line-height: 1.2em;
+    font-size: 20px; }
+  .offer-content .offer-container h1 {
+    font-size: 36px; }
+  .offer-content .offer-container h2 {
+    line-height: 1.2em;
+    font-size: 20px; }
+  .about-content {
+    background-image: none !important; }
+    .about-content .offer-container h1 {
+      font-size: 36px;
+      text-align: center; }
+    .about-content .offer-container p {
+      font-size: 18px; } }
+
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .res-xs {
+    display: block;
+    background-color: greenyellow; }
+  .container > .navbar-header .navbar-brand {
+    float: left;
+    display: inline-block;
+    margin-left: 44px; }
+  .container .navbar-nav {
+    margin: 0; }
+    .container .navbar-nav li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .navbar-fixed-top .navbar-collapse {
+    max-height: initial; }
+  .content-section.knowledge-content {
+    min-height: 560px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: #28b8c0; }
+    .content-section.knowledge-content .section-title-container {
+      margin: 40px 0 20px 0; }
+    .content-section.knowledge-content .section-title {
+      font-size: 30px; } }
+
+/* Landscape */
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .res-test {
+    background-color: blueviolet; }
+  .xs-hpd {
+    display: inline; }
+  .res-sm, .res-md, .res-lg {
+    display: none; } }
+
+/* Portrait */
+/* Landscape */
+/* ----------- Samsung Galaxy S5 ----------- */
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .res-xs {
+    display: block;
+    background-color: deeppink; } }
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .res-xs {
+    display: block;
+    background-color: deeppink; } }
+
+/* Landscape */
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
